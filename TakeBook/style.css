@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4; /* light gray background */
+}
+.navbar{
+    background-color: #2c3e50; /* dark blue */
+    color: #ffffff; /* white text */
+    padding: 10px;
+    border-radius: 5px;
+}
+.container{
+    padding: 10px;
+}
+.book-container{
+    padding: 15px;
+    width: 25%;
+    background-color: #3498db; /* vibrant blue */
+    border-radius: 10px;
+    color: #ffffff; /* white text */
+    margin: 40px;
+    display: inline-block;
+    box-shadow: 0px 0px 20px #58a399; /* light teal shadow */
+}
+.book-container h2{
+    color: #ffffff; /* white text */
+}
+.book-container h3{
+    color: #2c3e50; /* white text */
+}
+.book-container button{
+    background-color: #2c3e50; /* dark blue */
+    color: #ffffff; /* white text */
+    border-radius: 10px;
+    padding: 8px 15px;
+    border: none;
+    margin-top: 10px;
+}
+.add-button{
+    background-color: #e74c3c; /* red */
+    color: #ffffff; /* white text */
+    border-radius: 32%;
+    font-size: 30px;
+    padding: 20px;
+    border: none;
+    position: fixed;
+    bottom: 75px;
+    right: 30px;
+    box-shadow: 0px 0px 20px #c0392b; /* dark red shadow */
+}
+.popup-overlay{
+    background-color: rgba(0, 0, 0, 0.8); /* semi-transparent black overlay */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    display: none;
+}
+.popup-box{
+    background-color: #16a085; /* green */
+    width: 40%;
+    padding: 40px;
+    border-radius: 10px;
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    z-index: 2;
+    display: none;
+}
+.popup-box input, .popup-box textarea{
+    background: #ffffff; /* white input background */
+    border: none;
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.popup-box button{
+    background-color: #2c3e50; /* dark blue */
+    border: none;
+    padding: 10px 20px;
+    color: #ffffff; /* white text */
+    margin: 5px 0;
+    border-radius: 5px;
+}
+.popup-box textarea:focus, .popup-box input:focus{
+    outline: none;
+}
+.shape button{
+    border-radius: 10px;
+}
+.footer__copy {
+    font-size: medium;
+    color: #ffffff;
+    padding: 17px;
+    border: none;
+    position: fixed;
+    bottom: 0px;
+    background-color: #2c3e50;
+    width: 100%;
+    
+}
+/* For screens smaller than 768px (mobile devices) */
+@media only screen and (max-width: 768px) {
+    .book-container{
+        width: 80%;
+        margin: 4%;
+        font-size: medium;
+    }
+    .navbar{
+        font-size: small;
+    }
+    .popup-box {
+        background-color: #16a085; /* green */
+        width: 61%;
+        padding: 34px;
+        border-radius: 10px;
+        
+    top: 20%;
+    left: 9%;
+    }
+    .footer__copy{
+        font-size: medium;
+    }
+}

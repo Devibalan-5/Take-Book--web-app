@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TakeNotes</title>
+    <link rel="icon"href="book.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <h1>TakeBooks</h1>
+    </div>
+      <div class="container">
+        <div class="book-container">
+          <h2>TakeBooks</h2>
+          <h3>Examble</h3>
+          <p><b>Hii , I am Devibalan </b></p>
+            <p><b>TakeBooks , keep it your Mind</b></p>
+          <button onclick="deletebook(event)">Delete</button>
+        </div>
+      </div>
+      <div class="popup-overlay"></div>
+      <div class="popup-box">
+        <h2>Add Book</h2>
+        <form>
+          <div class="shape">
+            <input type="text" placeholder="Book Title" id="book-title-input" required>
+            <input type="text" placeholder="Book Author" id="book-author-input" required>
+            <textarea placeholder="Short Description" id="short-description-input" required></textarea>
+            <button id="add book">ADD</button>
+            <button id="cancel">CANCEL</button>
+          </div>  
+        </form>
+      </div>
+      <button class="add-button" id="add-popup-butten">+</button>
+
+      <p class="footer__copy">Made with ❤️ by Devibalan R </p>
+
+<script src="note JS.js"></script>
+</body>
+</html>
